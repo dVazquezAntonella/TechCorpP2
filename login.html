@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="icon" type="image/icon" href="img/LogoI.png" />
+    <script src="https://kit.fontawesome.com/ca1ea61cbb.js" crossorigin="anonymous"></script>
+</head>
+<!--LOGO-->
+<div id="logoLogin">
+  <a href="index.php"><img src="img/LogoL.jpg" class="app-text" alt="Logo"></a>
+        <a href="index.php"><img src="img/LogoI.png" class="app-logo" alt="Logo"></a>
+      </div>
+      <div class="clearfix"></div>
+    <div class="contenedorL">
+      
+<h2>Inicio Sesión</h2>
+<div class="card">
+    <div class="container">
+        <form action="log_in.php" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label><i class="fas fa-user"></i>Correo</label>
+            </div>
+            <div class="col-75">
+              <input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="Ingresar correo electrónico" name="correo" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label><i class="fas fa-lock"></i>Contraseña</label>
+            </div>
+            <div class="col-75">
+              <input type="password" pattern=".{6,}" placeholder="Ingresar contraseña" name="password" required>
+            </div>
+          <div class="row">
+            <input type="submit" value="Iniciar sesión">
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+    
+
+
+</body>
+</html>
